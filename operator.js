@@ -53,3 +53,13 @@ const stringFunction = (c, d) => {
 }
 let resultOfS=stringFunction(stringONe,stringTwo);
 console.log(resultOfS);
+
+//INCREAMENT DECREAMNE OPERATOR
+
+const inCreDecreamentFunction =(c,d)=>{
+    let result=c++;
+    let result2=d++;
+    return result,result2;
+}
+let resultOfC=inCreDecreamentFunction(am,bm);
+console.log(resultOfC);
