@@ -22,13 +22,14 @@ console.log(finalResult);
 // Also write a program in C to read any Month Number in integer and display the number of days for this month.
 
 
-const arrayOfMonth = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "Octeber", "November", "December"];
+const arrayOfMonth = ["","January", "February", "March", "April", "May", "June", "July", "August", "September", "Octeber", "November", "December"];
 // console.log(arrayOfMonth[0])
 const arrayOfDay = ["", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thrusday", "Friday"]
-let dayNumber = 1;
-let monthNumber = 2;
+let dayNumber = 5;
+let monthNumber = 7;
 const dayMonthCalculation = (y, z) => {
-    if (y <= 7 && z <= 12) {
+
+    if (y <= 7 || z <= 12) {
         const dayResult = arrayOfDay[y];
         const monthResult = arrayOfMonth[z];
         return {
@@ -36,11 +37,10 @@ const dayMonthCalculation = (y, z) => {
             day: dayResult
         }
     }
-    else{
-        return 'please enter a valid number'
+    else {
+        return 'please enter a valid month and day number';
     }
 
 }
-
-const finalResultIs = dayMonthCalculation(dayNumber,monthNumber);
+const finalResultIs = dayMonthCalculation(dayNumber, monthNumber);
 console.log(finalResultIs);
