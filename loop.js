@@ -8,14 +8,29 @@ for (let i = 0; i < j; i++) {
 //PROBLEMS 
 //Using a for loop print all even numbers up to and including n. Don’t include 0.
 let eArray = []
-let i=0;
+let i = 0;
 const eNum = (n) => {
     for (i; i <= n; i++) {
-        if (i % 2 == 0 && i!=0) {
+        if (i % 2 == 0 && i != 0) {
             eArray.push(i);
         }
     }
     return eArray;
 }
-let r=eNum(100);
-console.log(r)
+let r = eNum(50);
+console.log(r);
+
+//Given a number n Calculate the factorial of the number
+let f = 1;
+let m = 1;
+const fCal = (n) => {
+    for (m; m <= n; m++) {
+        f = f * m;
+    }
+    return f;
+}
+let rF=fCal(4);
+console.log(rF)
+
+
+
