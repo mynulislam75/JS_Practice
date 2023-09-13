@@ -29,8 +29,31 @@ const fCal = (n) => {
     }
     return f;
 }
-let rF=fCal(4);
+let rF = fCal(4);
 console.log(rF)
 
 
+//Sum of n number 
 
+let sArray = [];
+let s = 0;
+let a = 0;
+let b = 0;
+const sF = (n) => {
+    for (a; a <= n; a++) {
+        sArray.push(a);
+        if (a == n) {
+            for (b; b < sArray.length; b++) {
+               s+=sArray[b]
+            }
+        }
+
+
+    }
+    return {
+        numberLIst:sArray,
+        sumResult:s
+    };
+}
+let sResult = sF(100);
+console.log(sResult)
